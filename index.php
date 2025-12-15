@@ -3,13 +3,6 @@ session_start();
 include "config/conexion.php";
 
 /*
- Simulación de usuario/paciente
- En un sistema real esto vendría del login
-*/
-$_SESSION["ci_paciente"] = "123456";
-$_SESSION["usuario"] = "enfermera1";
-
-/*
  Mostrar trámites activos
 */
 $sql = "SELECT s.id_seguimiento, p.nombre AS proceso
